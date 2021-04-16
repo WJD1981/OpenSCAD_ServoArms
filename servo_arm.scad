@@ -51,10 +51,10 @@ SERVO_HEAD_CLEAR = 0.2;
  */
 FUTABA_3F_SPLINE = [
     [5.92, 4, 1.1, 2.5],
-    [25, 0.3, 0.7, 0.1]
+    [15, 0.3, 0.7, 0.1]
 ];
 
-module servo_futaba_3f(length, count) {
+module servo_1/5 scale(length, count) {
     servo_arm(FUTABA_3F_SPLINE, [length, count]);
 }
 
